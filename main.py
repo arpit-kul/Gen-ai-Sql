@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 #########################  Load Constituent Stock Prices data  #########################
 
 # Nifty 50 Constituent Price data
-csp = pickle.load(open('./data/constituent_stock_prices.pkl', 'rb'))
+csp = pickle.load(open('./constituent_stock_prices.pkl', 'rb'))
 
 # Combine 50 dataframes into one, Add a column 'Symbol' to distinguish that the row data is for that particular company
 
@@ -89,7 +89,7 @@ print("Data inserted into 'stock_prices' successfully!")
 #########################  Load Constituent Stock Fundamentals data  #########################
 
 # Load second pickle file
-csf = pickle.load(open('./data/constituent_stock_fundamentals.pkl', 'rb'))
+csf = pickle.load(open('./constituent_stock_fundamentals.pkl', 'rb'))
 
 # Select any one Stock. Each stock is a dictionary
 d1 = csf['ADANIENT.NS']
